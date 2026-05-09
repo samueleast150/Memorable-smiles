@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorable Smiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>😊 Memorable Smiles</h1>
+            <p>Capture and share moments that made you smile</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <form id="smileForm">
+                    <div class="form-group">
+                        <label for="smileTitle">Smile Title:</label>
+                        <input type="text" id="smileTitle" placeholder="What made you smile?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="smileDescription">Description:</label>
+                        <textarea id="smileDescription" placeholder="Tell the story..." rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="smileDate">Date:</label>
+                        <input type="date" id="smileDate" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Smile</button>
+                </form>
+            </section>
+
+            <section class="smiles-gallery">
+                <h2>Your Smiles Collection</h2>
+                <div id="smilesList" class="smiles-grid">
+                    <!-- Smiles will be added here dynamically -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Keep smiling! 😄</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
